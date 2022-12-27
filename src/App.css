@@ -1,0 +1,140 @@
+
+.container{
+  /* border: solid  black; */
+  /* width: 320px; */
+  position: relative;
+  min-width: 300px;
+  min-height: 400px;
+  background-color: rgb(54, 110, 193);
+  border-radius: 10px;
+  padding: 40px 30px 30px;
+  box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+  10px 10px 70px rgba(0,0,0,0.25),
+  inset -5px -5px 15px rgba(0,0,0,0.5),
+  inset 5px 5px 15px rgba(0,0,0,0.5);
+  width: 600px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: lightpink;
+}
+
+.topbar {
+  height:40px;
+  /* border: 1px solid white; */
+  width: 100%;
+
+  /* position: relative;
+  display: grid; */
+  font-size: 35px;
+  overflow: hidden;
+}
+.calculator{
+  border: 2px solid white;
+  position: relative;
+  display: grid;
+  border-radius: 20px;
+  height: 100px;
+  background-color: aliceblue;
+  opacity: 0.5;
+  padding: 20px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:700;
+}
+
+.bottombar{
+  height:60px;
+  /* border: solid  black; */
+  /* border: 1px solid black; */
+  width:90%;
+  /* background-color: aliceblue; */
+  position: relative;
+  display: grid;
+  font-size: 55px;
+  text-align: end;
+  overflow: hidden;
+}
+
+
+svg{
+  height: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+  vertical-align: top;
+}
+.calculator{
+
+}
+
+.numberbtn{
+  margin-top: -10px;
+}
+button{
+  position: relative;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  background:linear-gradient(180deg,#2f2f2f, #3f3f3f);
+  /* background-color:aliceblue; */
+  box-shadow:inset -8px 8px rgba(0,0,0,0.25),
+  0 0 0 2px rgba(0,0,0,0.75),
+  10px 20px 25px rgba(0,0,0,0.4);
+  color: #fff; 
+  user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius:10px;
+}
+
+ button i{
+  /* z-index: -1; */
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background:linear-gradient(90deg,#2d2d2d, #4d4d4d);
+  border-radius: 10px;
+  justify-content:center;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+} 
+
+/* button i:hover{
+  background:linear-gradient(90deg,#03850c, #35ef06);
+}
+
+button:hover{
+  background:linear-gradient(180deg,#09e31b, #5bcc15);
+} */
+
+.number{
+ color:rgb(193, 54, 80);
+}
+
+.AC{
+  background:linear-gradient(180deg,#250101, #630303);
+}
+
+.AC i{
+  background:linear-gradient(90deg,#6b0505, #764c4c);
+} 
+
+.expression{
+  display: inline-block;
+  text-align: end;
+  width: 80%;
+  overflow: hidden;
+}
+
+sup{
+  vertical-align: top; position: relative; top: -0.5em; 
+  font-size: 10px;
+}
